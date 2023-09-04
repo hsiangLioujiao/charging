@@ -4,7 +4,7 @@ from PIL import Image
 
 st.title('充電站')
 st.subheader("資料來源：")
-image = Image.open('d:\\code\\2023\\jpgs\\open_data.PNG')
+image = Image.open('open_data.PNG')
 st.image(image, caption='Sunrise by the mountains')
 
 
