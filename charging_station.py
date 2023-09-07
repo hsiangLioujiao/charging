@@ -2,11 +2,12 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 
+
 st.title('充電站')
 st.subheader("資料來源：")
-image = Image.open('open_data.PNG')
-st.image(image, caption='Sunrise by the mountains')
-
+image = Image.open('d:\\code\\2023\\jpgs\\open_data.PNG')
+st.image(image)
+st.divider()
 
 option = st.selectbox('請選擇電動車充電位置的資料來源：',
                       ('台灣糖業公司_加油站供電動車充電服務營業據點',
@@ -14,7 +15,6 @@ option = st.selectbox('請選擇電動車充電位置的資料來源：',
                        '台灣中油股份有限公司_土地出租給充電樁業者營運加油站',
                        '嘉義市電動汽車充電站'))
 st.write('目前顯示的是：', option)
-
 
 if option == '台灣糖業公司_加油站供電動車充電服務營業據點':
     url="https://www.taisugar.com.tw/upload/UserFiles/%E5%8F%B0%E7%81%A3%E7%B3%96%E6%A5%AD%E5%85%AC%E5%8F%B8_%E5%8A%A0%E6%B2%B9%E7%AB%99%E4%BE%9B%E9%9B%BB%E5%8B%95%E8%BB%8A%E5%85%85%E9%9B%BB%E6%9C%8D%E5%8B%99%E7%87%9F%E6%A5%AD%E6%93%9A%E9%BB%9E.csv"
