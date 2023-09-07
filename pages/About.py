@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager as fm
 import streamlit as st
 
-fm.fontManager.addfont('TaipeiSansTCBeta-Regular.ttf')
+fm.fontManager.addfont('D:\\.data\\TaipeiSansTCBeta-Regular.ttf')
 plt.rcParams["font.size"] = 14
 plt.rcParams['font.family'] = 'Taipei Sans TC Beta'
 
@@ -31,5 +31,7 @@ plt.figure()
 df.plot()
 
 st.header("初步想法：")
-st.write("找到兩個相關的指數，如下圖中B項跟隨著A，那.....")
+st.markdown("找到兩個**相關**的指數，如下圖中B項:red[**跟隨**]著A，那.....\
+            :tulip::cherry_blossom::rose::hibiscus::sunflower::blossom:")
 st.line_chart(df)
+st.divider()
