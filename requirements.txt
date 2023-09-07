@@ -1,7 +1,4 @@
 streamlit
 numpy
 pandas
-matplotlib.pylot
-matplot
-seaborn
-PIL
+
