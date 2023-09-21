@@ -54,7 +54,7 @@ plt.title("不知道是甚麼的Dynamic Time Warping(DTW)")
 ds = dtw.distance_matrix_fast(np.array(df.astype("float")).T)
 sns.heatmap(pd.DataFrame(ds, 
                          columns=['A項指數', 'B項指數', 'C項指數'], 
-                         index=['A項指數', 'B項指數', 'C項指數']))
+                         index=['A項指數', 'B項指數', 'C項指數']), annot=True)
 
 st.pyplot(plt)
 st.divider()
