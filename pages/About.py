@@ -13,7 +13,7 @@ import streamlit as st
 from dtaidistance import dtw
 from dtaidistance import dtw_visualisation as dtwvis
 
-fm.fontManager.addfont('D:\\.data\\TaipeiSansTCBeta-Regular.ttf')
+fm.fontManager.addfont('TaipeiSansTCBeta-Regular.ttf')
 plt.rcParams["font.size"] = 14
 plt.rcParams['font.family'] = 'Taipei Sans TC Beta'
 plt.close('all')
